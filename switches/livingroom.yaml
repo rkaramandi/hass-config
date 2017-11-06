@@ -1,0 +1,11 @@
+#
+# Living Room
+#
+
+- platform: mqtt
+  name: "Living Room Light"
+  state_topic: "smartthings/Living Room Light/switch"
+  command_topic: "smartthings/Living Room Light/switch"
+  payload_on: "on"
+  payload_off: "off"
+  retain: true # keep device in sync when things are disconnected

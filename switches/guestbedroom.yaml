@@ -1,0 +1,11 @@
+#
+# Guest Bedroom
+#
+
+- platform: mqtt
+  name: "Guest Bedroom Light"
+  state_topic: "smartthings/Guest Bedroom Light/switch"
+  command_topic: "smartthings/Guest Bedroom Light/switch"
+  payload_on: "on"
+  payload_off: "off"
+  retain: true # keep device in sync when things are disconnected
