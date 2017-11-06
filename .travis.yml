@@ -6,4 +6,4 @@ install:
 script:
   - hass -c . --script check_config
 before_install:
-  - mv dummy_secrets.yaml secrets.yaml
+  - mv dummy_secrets.yml secrets.yml
