@@ -1,0 +1,18 @@
+#
+# scenes.yaml
+# Scenes for automation
+#
+
+  - name: Goodnight
+    entities:
+      switch.guest_bedroom_table_lamp: off
+      switch.living_room_lamp: off
+      switch.office_desk_light: off
+      switch.bedroom_light: off
+
+  - name: Lights_On
+    entities:
+      switch.guest_bedroom_table_lamp: on
+      switch.living_room_lamp: on
+      switch.office_desk_light: on
+      switch.bedroom_light: on
