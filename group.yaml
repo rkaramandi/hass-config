@@ -108,8 +108,8 @@ dining_room:
   entities:
   - light.dining_room_light
 
-hallway:
-  name: Hallway
+corridor:
+  name: Corridor
   entities:
   - light.guest_hallway_light
   - climate.main_floor
