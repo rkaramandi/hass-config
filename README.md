@@ -27,6 +27,8 @@
 
 * [Containerized HASS](https://hub.docker.com/r/homeassistant/home-assistant/)
 * Mosca MQTT Server (Containerized)
+* Github
+* Travis CI for configuration checking
 
 ## Other Hardware
 
