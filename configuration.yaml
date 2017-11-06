@@ -109,7 +109,7 @@ input_boolean:
 # Scenes
 #
 
-scene: !include scene.yaml
+scene: !include scenes.yaml
 
 #
 # Logging + Notifications
