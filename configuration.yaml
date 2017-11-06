@@ -5,20 +5,109 @@
 
 homeassistant:
   name: Home
-  latitude: !secret latitude # Moved to secret March 6, 2017
-  longitude: !secret longitude # Moved to secret March 6, 2017
+  latitude: !secret latitude
+  longitude: !secret longitude
   unit_system: metric
-  time_zone: America/Toronto
+  time_zone: !secret timezone
+
+http:
+  api_password: !secret http_password
 
 frontend:
 
-updater: # Enabled Jul 6, 2016
-  reporting: no # Added Dec 26, 2016
+updater:
+  reporting: no
 
 discovery:
 
 mqtt:
   broker: !secret mqtt_broker
 
+lutron_caseta:
+  host: !secret lutron_ip
+
+nest:
+  client_id: !secret nest_username
+  client_secret: !secret nest_password
+
+ecobee:
+  api_key: !secret ecobee_api
+  hold_temp: False
+
 sun:
-  elevation: 91
+  elevation: !secret elevation
+
+cover:
+  - platform: myq
+    username: !secret myq_username
+    password: !secret myq_password
+    type: chamberlain
+
+wemo:
+  static:
+    - !secret wemo1_ip
+    - !secret wemo2_ip
+    - !secret wemo3_ip
+    - !secret wemo4_ip
+
+zeroconf:
+
+#
+# Sensors
+#
+
+sensor:
+
+  # Network Components
+
+  # Speed Test - Update every 15 min
+
+  - platform: fastdotcom
+    minute:
+      - 0
+      - 15
+
+  # Smoke
+
+  - platform: nest
+    monitored_conditions:
+      - 'battery_level'
+      - 'co_status'
+      - 'smoke_status'
+
+  # Weather
+
+  - platform: yweather
+    name: Weather
+    monitored_conditions:
+      - weather
+      - weather_current
+      - temperature
+
+#
+# Custom Inputs
+#
+
+input_boolean:
+
+  guest_mode:
+    name: Guest Mode
+    initial: off
+
+  goodnight:
+    name: Goodnight
+    initial: off
+
+#
+# External Files
+#
+
+#
+# Logging
+#
+
+influxdb:
+  host: !secret influx_host
+  exclude:
+    domains:
+      - automation
