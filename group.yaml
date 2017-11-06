@@ -1,0 +1,115 @@
+#
+# group.yaml
+# Grouping of various components on front-end
+#
+
+automations:
+  name: Automations
+  entities:
+    - automation.back_door_close_notify
+    - automation.back_door_open_notify
+    - automation.front_door_close_notify
+    - automation.front_door_open_notify
+    - automation.goodbye
+    - automation.lights_off_2330
+    - automation.lights_on_sunset_isaway
+    - automation.lights_on_sunset_ishome
+    - automation.welcome_home_daytime
+    - automation.welcome_home_nighttime
+
+scenes:
+  name: Scenes
+  entities:
+    - scene.Goodnight
+    - scene.Lights_On
+
+doors:
+  name: Doors
+  entities:
+    - cover.garage_door_opener
+    - sensor.front_door
+    - sensor.front_door_temperature
+    - sensor.back_door
+    - sensor.back_door_temperature
+
+home_theater:
+  name: Home Theater
+  entities:
+  - sensor.basement_temperature
+  - binary_sensor.basement_nest_protect_online
+  - sensor.basement_nest_protect_co_status
+  - sensor.basement_nest_protect_smoke_status
+  - media_player.apple_tv
+  - sensor.plex_server
+
+kitchen:
+  name: Kitchen
+  entities:
+  - sensor.upstairs_motion_sensor_temperature
+  - sensor.upstairs_motion_sensor
+
+living_room:
+  name: Living Room
+  entities:
+  - media_player.cast
+  - switch.living_room_lamp
+  - switch.living_room_light
+
+office:
+  name: Office
+  entities:
+  - sensor.main_floor_temperature
+  - sensor.main_floor_humidity
+  - switch.office_desk_light
+  - switch.office_room_light
+  - media_player.85dhcca1
+
+hallway:
+  name: Hallway
+  entities:
+  - binary_sensor.hallway_nest_protect_online
+  - sensor.hallway_nest_protect_co_status
+  - sensor.hallway_nest_protect_smoke_status
+
+guest_bedroom:
+  name: Guest Bedroom
+  entities:
+  - switch.guest_bedroom_table_lamp
+  - switch.guest_bedroom_light
+
+guest_bathroom:
+  name: Guest Bathroom
+  entities:
+  - light.bathroom_light
+  - switch.exhaust_fan
+
+master_bedroom:
+  name: Master Bedroom
+  entities:
+  - sensor.watch_drawer
+  - sensor.watch_drawer_temperature
+  - switch.bedroom_light
+  - switch.master_bedoom_light
+
+network:
+  name: Network
+  entities:
+  - sensor.fastcom_download
+
+weather:
+  name: Weather
+  entities:
+  - sensor.weather_temperature
+  - sensor.weather_condition
+  - sensor.weather_current
+
+dining_room:
+  name: Dining Room
+  entities:
+  - light.dining_room_light
+
+hallway:
+  name: Hallway
+  entities:
+  - light.guest_hallway_light
+  - climate.main_floor
