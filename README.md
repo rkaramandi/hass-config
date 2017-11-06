@@ -1,6 +1,6 @@
 # Home Assistant Configuration [![Build Status](https://travis-ci.org/rkaramandi/hass-config.svg?branch=master)](https://travis-ci.org/rkaramandi/hass-config)
 
-## IoT Components Used:
+## IoT Components Used
 
 * MQTT - To communicate with SmartThings using the [Smarter SmartThings](https://home-assistant.io/blog/2016/02/09/Smarter-Smart-Things-with-MQTT-and-Home-Assistant/)
 * Lutron Caseta Smart Light Switches
@@ -9,21 +9,21 @@
 * MyQ Garage door opener
 * Wemo
 
-## Logging and Monitoring:
+## Logging and Monitoring
 
 * InfluxDB
 
-## MQTT Devices:
+## MQTT Devices
 
 * SmartThings Presence Sensors
 * SmartThings Door Open/Close Sensors
 * SmartThings Motion Sensors
 
-## Things that came off the list:
+## Things that came off the list
 
 * TrackR
 
-# Infrastructure:
+# Infrastructure
 
 * [Containerized HASS](https://hub.docker.com/r/homeassistant/home-assistant/)
 * Mosca MQTT Server (Containerized)

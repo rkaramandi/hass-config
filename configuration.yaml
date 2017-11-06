@@ -18,6 +18,13 @@ frontend:
 updater:
   reporting: no
 
+sun:
+  elevation: !secret elevation
+
+#
+# Components
+#
+
 discovery:
 
 mqtt:
@@ -33,9 +40,6 @@ nest:
 ecobee:
   api_key: !secret ecobee_api
   hold_temp: False
-
-sun:
-  elevation: !secret elevation
 
 cover:
   - platform: myq
