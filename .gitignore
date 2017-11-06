@@ -1,0 +1,23 @@
+# CUSTOM #
+##########
+/deps
+.HA_VERSION
+known_devices.yaml
+secrets.yaml
+ecobee.conf
+nest.conf
+
+# Logs and databases #
+######################
+*.log
+*.db
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
