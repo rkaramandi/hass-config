@@ -1,0 +1,9 @@
+#
+# notify.yaml
+# Settings for notifications
+#
+
+- platform: slack
+  api_key: !secret slack_api
+  name: slack_notify
+  default_channel: '#home-automation'
