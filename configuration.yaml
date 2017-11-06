@@ -18,7 +18,7 @@ updater: # Enabled Jul 6, 2016
 discovery:
 
 mqtt:
-  broker: !secret mqtt-broker
+  broker: !secret mqtt_broker
 
 sun:
   elevation: 91
