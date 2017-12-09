@@ -32,6 +32,9 @@ mqtt:
 
 lutron_caseta:
   host: !secret lutron_ip
+  keyfile: caseta.key
+  certfile: caseta.crt
+  ca_certs: caseta-bridge.crt
 
 nest:
   client_id: !secret nest_username
