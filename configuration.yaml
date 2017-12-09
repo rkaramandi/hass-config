@@ -27,6 +27,13 @@ sun:
 
 discovery:
 
+cloud:
+  mode: development
+  cognito_client_id: !secret cloud_client_id
+  user_pool_id: !secret cloud_user_pool_id
+  region: !secret cloud_region
+  relayer: !secret cloud_relayer
+
 mqtt:
   broker: !secret mqtt_broker
 
