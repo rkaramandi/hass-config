@@ -1,0 +1,5 @@
+  # Speed Test - Update every 15 min
+  - platform: fastdotcom
+    minute:
+      - 0
+      - 15

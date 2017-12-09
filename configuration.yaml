@@ -70,35 +70,18 @@ zeroconf:
 # Sensors
 #
 
-sensor:
+sensor: !include_dir_merge_list sensors
 
-  # Network Components
+#
+# MQTT Light Switches (From SmartThings)
+#
 
-  # Speed Test - Update every 15 min
-  - platform: fastdotcom
-    minute:
-      - 0
-      - 15
-
-  # Smoke
-  - platform: nest
-    monitored_conditions:
-      - 'battery_level'
-      - 'co_status'
-      - 'smoke_status'
-
-  # Weather
-  - platform: yweather
-    name: Weather
-    monitored_conditions:
-      - weather
-      - weather_current
-      - temperature
-
-# Light Switches in Different Rooms
 switch: !include_dir_merge_list switches
 
+#
 # Device Groups
+#
+
 group: !include group.yaml
 
 #

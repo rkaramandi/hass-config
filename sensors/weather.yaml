@@ -1,0 +1,7 @@
+  # Weather
+  - platform: yweather
+    name: Weather
+    monitored_conditions:
+      - weather
+      - weather_current
+      - temperature

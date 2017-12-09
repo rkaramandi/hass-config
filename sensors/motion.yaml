@@ -1,0 +1,12 @@
+  # Motion Sensors
+  - platform: mqtt
+    state_topic: "smartthings/Upstairs Motion Sensor/temperature"
+    name: "Upstairs Motion Sensor Temperature"
+
+  - platform: mqtt
+    state_topic: "smartthings/Upstairs Motion Sensor/battery"
+    name: "Upstairs Motion Sensor Battery"
+
+  - platform: mqtt
+    state_topic: "smartthings/Upstairs Motion Sensor/motion"
+    name: "Upstairs Motion Sensor"

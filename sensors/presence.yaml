@@ -1,0 +1,16 @@
+# Presence Sensors
+  - platform: mqtt
+    state_topic: "smartthings/Keys - Rohan/presence"
+    name: "Rohan's Car"
+
+  - platform: mqtt
+    state_topic: "smartthings/Keys - Rohan/lqi"
+    name: "Rohan's Car - Battery"
+
+  - platform: mqtt
+    state_topic: "smartthings/Rohan's iPhone/presence"
+    name: "Rohan's iPhone"
+
+  - platform: mqtt
+    state_topic: "smartthings/Hina's iPhone/presence"
+    name: "Hina's iPhone"

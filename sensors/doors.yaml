@@ -1,0 +1,26 @@
+  # Front Door Contact Sensor
+  - platform: mqtt
+    state_topic: "smartthings/Front Door/contact"
+    name: "Front Door"
+
+  - platform: mqtt
+    state_topic: "smartthings/Front Door/temperature"
+    name: "Front Door Temperature"
+
+  # Back Door
+  - platform: mqtt
+    state_topic: "smartthings/Back Door/contact"
+    name: "Back Door"
+
+  - platform: mqtt
+    state_topic: "smartthings/Back Door/temperature"
+    name: "Back Door Temperature"
+
+  # Watch Drawer
+  - platform: mqtt
+    state_topic: "smartthings/Watch Drawer/contact"
+    name: "Watch Drawer"
+
+  - platform: mqtt
+    state_topic: "smartthings/Watch Drawer/temperature"
+    name: "Watch Drawer Temperature"

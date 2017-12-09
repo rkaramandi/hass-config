@@ -1,0 +1,6 @@
+  # Smoke
+  - platform: nest
+    monitored_conditions:
+      - 'battery_level'
+      - 'co_status'
+      - 'smoke_status'
