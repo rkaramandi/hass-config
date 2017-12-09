@@ -27,6 +27,8 @@ sun:
 
 discovery:
 
+apple_tv:
+
 cloud:
   mode: development
   cognito_client_id: !secret cloud_client_id
@@ -112,8 +114,8 @@ scene: !include scenes.yaml
 notify: !include notify.yaml
 
 # Logging to InfluxDB
-influxdb:
-  host: !secret influx_host
-  exclude:
-    domains:
-      - automation
+# influxdb:
+#   host: !secret influx_host
+#   exclude:
+#     domains:
+#       - automation
