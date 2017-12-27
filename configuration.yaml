@@ -65,6 +65,7 @@ wemo:
     - !secret wemo2_ip
     - !secret wemo3_ip
     - !secret wemo4_ip
+    - !secret wemo5_ip
 
 zeroconf:
 
